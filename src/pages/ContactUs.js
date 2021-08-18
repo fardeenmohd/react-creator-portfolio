@@ -29,14 +29,14 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Call us on: 592-223-1111</h2>
+            <h2>Call us</h2>
           </Social>
         </Hide>
 
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Email us at: creator@gmail.com</h2>
+            <h2>Email us</h2>
           </Social>
         </Hide>
       </div>
@@ -48,11 +48,18 @@ const ContactStyle = styled(motion.div)`
   padding: 5rem 10rem;
   color: #353535;
   min-height: 90vh;
+  @media (max-width: 1300px) {
+    padding: 2rem;
+    font-size: 1rem;
+  }
 `;
 
 const Title = styled.div`
   margin-bottom: 4rem;
   color: black;
+  @media (max-width: 1500px) {
+    margin-top: 5rem;
+  }
 `;
 
 const Hide = styled.div`
