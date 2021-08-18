@@ -12,6 +12,7 @@ import {
   slider,
   sliderContainer,
 } from "../animation";
+import ScrollTop from "../components/ScrollTop";
 
 import { useScroll } from "../components/useScroll";
 //Images
@@ -65,6 +66,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="" />
         </Link>
       </Movie>
+      <ScrollTop />
     </Work>
   );
 };
